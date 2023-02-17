@@ -41,7 +41,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ https://github.com/zhzahid1911509/Resume/raw/main/Resume%20-%20Zahid%20Hasan(UPDATED).pdf }}
     runs-on: ubuntu-latest
     needs: build
     steps:
