@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zahid's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec4cd1174f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -13,13 +14,16 @@
         <div class="container">
             <nav>
                 <img src="images/zh-logo.png" alt="" class="logo">
-                <ul>
+                
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Profession</a></li>
-                    <li><a href="#">Project Works</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Project Works</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-times" style="color: #ffebcd;" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" style="color: #ffebcd;" onclick="openmenu()"></i>
             </nav>
             <div class="bg-img">
                 <img src="images/bg-image.gif" alt="Image">
@@ -72,7 +76,92 @@
             </div>
         </div>
     </div>
-    
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <img width="50" height="50" src="https://img.icons8.com/pastel-glyph/50/FFEBCD/website--v2.png" alt="website--v2"/> 
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cupiditate corrupti incidunt reiciendis earum</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/FFEBCD/spark-logo.png" alt="spark-logo"/>  
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cupiditate corrupti incidunt reiciendis earum</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <img width="64" height="64" src="https://img.icons8.com/external-outline-satawat-anukul/64/FFEBCD/external-designthinking-design-thinking-outline-outline-satawat-anukul-12.png" alt="external-designthinking-design-thinking-outline-outline-satawat-anukul-12"/>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cupiditate corrupti incidunt reiciendis earum</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+        </div> 
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/proj1.jpg" alt="" class="pp">
+                    <div class="layer">
+                        <h3>NGO Management System</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cupiditate corrupti incidunt reiciendis earum</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square" style="color: #2DB116;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/proj2.jpg" alt="" class="pp">
+                    <div class="layer">
+                        <h3>Vitual Health Service</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cupiditate corrupti incidunt reiciendis earum</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square" style="color: #2DB116;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/proj3.jpg" alt="" class="pp">
+                    <div class="layer">
+                        <h3>E-Commerce Customer Churn Prediction</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cupiditate corrupti incidunt reiciendis earum</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square" style="color: #2DB116;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope" style="color: #ffebcd;"></i>zahid.hasan.nsu2019@gmail.com</p>
+                <p><i class="fa-solid fa-phone" style="color: #ffebcd;"></i>+8801518916370</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/hasanZahid2000"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/zahid-hasan-7a77411b6/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/zhzahid1911509"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Full Name" required>
+                    <input type="email" name="Email" placeholder="Yor Email Address" required>
+                    <textarea name="Message" cols="6" rows="6" placeholder="Write your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <div class="copyright">
+        <p>@2023 Zahid.</p>
+    </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
