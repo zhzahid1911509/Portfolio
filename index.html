@@ -1,10 +1,78 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en" style="width:100%; height:100%;">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Zahid's Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahid's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-  <body style="width:100%; height:100%; margin:0;">
-    <iframe src="https://docs.google.com/gview?url=https://github.com/zhzahid1911509/Resume/raw/main/Resume%20-%20Zahid%20Hasan(UPDATED).pdf&embedded=true" style="width:100%; height:100%;" frameborder="0"></iframe>
-  </body>
+<body>
+    
+    <div id="header">
+        
+        <div class="container">
+            <nav>
+                <img src="images/zh-logo.png" alt="" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Profession</a></li>
+                    <li><a href="#">Project Works</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="bg-img">
+                <img src="images/bg-image.gif" alt="Image">
+              </div>
+            
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I am <span>Zahid</span><br>Hasan from Bangladesh.</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="auto-col-1">
+                    <img src="images/bg-image.gif" alt="">
+                </div>
+                <div class="auto-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat hic sunt labore doloribus quidem voluptate? Pariatur sunt hic deserunt at ipsam vero, voluptate id fugit rem enim facilis, dolor nostrum?</p>
+                    <div class="tab-title">
+                        <div class="tab-links active-link" onclick="opentab('skill')">Skill</div>
+                        <div class="tab-links" onclick="opentab('edu')">Education</div>
+                        <div class="tab-links" onclick="opentab('exp')">Experience</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li><span>Backend Development</span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li><span>.NET Development</span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li><span>Problem Solving</span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="tab-contents" id="edu">
+                        <ul>
+                            <li><span>BSc in Computer Science & Engineering</span><br>North South University(2023)</li>
+                            <li><span>Higher Secondary Certificate</span><br>Notre Dame College(2018)</li>
+                            <li><span>Secondary School Certificate</span><br>Cambrian School & College(2016)</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="tab-contents" id="exp">
+                        <ul>
+                            <li><span>Software Engineer</span><br>BNX Networks BD(March, 2023 - Present)</li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+</body>
 </html>
