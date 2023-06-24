@@ -35,3 +35,23 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyvGXsbyt2MzFDD8jRCr1
     })
       .catch(error => console.error('Error!', error.message))
   })
+
+  ScrollReveal({
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+  });
+
+  ScrollReveal().reveal('.header-text, #about, #services, #portfolio, .contact-left',{origin: 'top'});
+  ScrollReveal().reveal('.bg-img, .auto-col-1, .contact-right',{origin: 'bottom'});
+  ScrollReveal().reveal('.auto-col-1, .contact-left',{origin: 'left'});
+  ScrollReveal().reveal('.auto-col-2, .contact-right',{origin: 'right'});
+
+  const typed = new Typed('.multi-text',{
+    strings:['CSE Graduate','Software Engineer','Web Developer'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+  });
