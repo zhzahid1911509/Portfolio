@@ -6,7 +6,8 @@
     <title>Zahid's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ec4cd1174f.js" crossorigin="anonymous"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> 
 </head>
 <body>
     
@@ -18,7 +19,7 @@
                 
                 <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#aboutText">About Me</a></li> 
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Project Works</a></li>
                     <li><a href="#contact">Contact Me</a></li>
@@ -27,12 +28,13 @@
                 <i class="fa-solid fa-bars" style="color: #ffebcd;" onclick="openmenu()"></i>
             </nav>
             <div class="bg-img">
-                <img src="images/bg-image.gif" alt="Image">
+                <img src="images/self-pic-1.png" alt="Image">
               </div>
             
             <div class="header-text">
-                <p>Software Engineer</p>
-                <h1>Hi, I am <span>Zahid</span><br>Hasan from Bangladesh.</h1>
+                <h2><span>Hi, I am</span></h2>
+                <h1><span>Zahid Hasan</span></h1>
+                <h2>And I am a <span class="multi-text"></span></h2>
             </div>
         </div>
     </div>
@@ -40,9 +42,9 @@
         <div class="container">
             <div class="row">
                 <div class="auto-col-1">
-                    <img src="images/bg-image.gif" alt="">
+                    <img src="images/self-pic.png" alt="">
                 </div>
-                <div class="auto-col-2">
+                <div class="auto-col-2" id="aboutText">
                     <h1 class="sub-title">About</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat hic sunt labore doloribus quidem voluptate? Pariatur sunt hic deserunt at ipsam vero, voluptate id fugit rem enim facilis, dolor nostrum?</p>
                     <div class="tab-title">
@@ -146,7 +148,7 @@
                     <a href="https://www.linkedin.com/in/zahid-hasan-7a77411b6/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/zhzahid1911509"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <a href="images/Resume - Zahid Hasan.pdf" class="btn btn2">Download CV</a>
+                <a href="" class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet" method="post">
