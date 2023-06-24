@@ -405,7 +405,10 @@ nav .fa-solid{
     .bg-img{
         width: 250px;
         height: 350px;
-        align-content: right;
+        align-content: left;
+        align-items: left;
+        padding-right: 40px;
+        margin-left: -20px;
     }
 
     nav ul{
