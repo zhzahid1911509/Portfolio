@@ -6,6 +6,7 @@
     <title>Zahid's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ec4cd1174f.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     
@@ -148,12 +149,13 @@
                 <a href="" class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form action="">
-                    <input type="text" name="Name" placeholder="Your Full Name" required>
-                    <input type="email" name="Email" placeholder="Yor Email Address" required>
+                <form name="submit-to-google-sheet" method="post">
+                    <input type="text" name="Name" id="fname" placeholder="Your Full Name" required>
+                    <input type="email" name="Email" id="mail" placeholder="Yor Email Address" required>
                     <textarea name="Message" cols="6" rows="6" placeholder="Write your message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
         
