@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 
@@ -10,25 +10,43 @@ body{
     color: blanchedalmond;
 }
 
-.bg-img{
-    display: flex;
-    flex: 1;
-    width: 300px; 
-    height: 400px;
-    float: right;
-    margin-top: 5%;
-    margin-right: 10%; 
-    border-radius: 20px; /* Apply rounded border */
-     
-} 
-
-
 #header{
     width: 100%;
     height: 100vh;
     margin-bottom: 20px;
     background-size: cover;
     background-position: center;
+    flex-basis: 65%;
+}
+
+.multi-text{
+    color: #40FF00;
+}
+
+.bg-img{
+    display: flex;
+    flex: 1;
+    flex-basis: 35%; 
+    width: 300px; 
+    height: 400px;
+    float: right;
+    margin-top: 5%;
+    margin-right: 10%; 
+    border-radius: 100px; /* Apply rounded border */
+    box-shadow: 0 2px 4px rgba(5, 228, 235, 0.2);
+    animation: floatImage 4s ease-in-out infinite;
+} 
+
+@keyframes floatImage{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .container{
@@ -87,8 +105,14 @@ nav ul li a:hover::after{
 }
 
 .header-text h1{
-    font-size: 60px;
+    font-size: 4rem;
+    font-weight: 400;
     margin-top: 20px;
+}
+
+.header-text h2{
+    font-size: 3rem;
+    font-weight: 500;;
 }
 
 .header-text h1 span{
@@ -96,7 +120,7 @@ nav ul li a:hover::after{
 }
 
 #about{
-    padding: 50px 0;
+    padding: 40px 0;
     color: blanchedalmond;
 }
 
@@ -116,10 +140,11 @@ nav ul li a:hover::after{
 }
 
 .auto-col-2{
-    flex-basis: 60%;
+    flex-basis: 65%;
 }
 
 .sub-title{
+    text-align: center;
     font-size: 60px;
     font-weight: 600;
 }
@@ -381,11 +406,7 @@ nav .fa-solid{
     .header-text{
         margin-top: 100%;
         margin-bottom: 50px;
-        font-size: 16px;
-    }
-
-    .header-text{
-        font-size: 30px;
+        font-size: 10px;
     }
 
     nav .fa-solid{
@@ -405,10 +426,9 @@ nav .fa-solid{
     .bg-img{
         width: 250px;
         height: 350px;
-        align-content: left;
-        align-items: left;
-        padding-right: 40px;
-        margin-left: -20px;
+        position:inherit;
+        
+        margin-right: 20%;
     }
 
     nav ul{
@@ -444,10 +464,13 @@ nav .fa-solid{
     }
 
     .auto-col-1{
+        align-content: center;
+        margin-top: 40px;
         margin-bottom: 30px;
     }
 
     .auto-col-2{
+        align-content: center;
         font-size: 15px;
     }
 
