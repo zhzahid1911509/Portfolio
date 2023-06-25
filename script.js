@@ -32,7 +32,7 @@ const msg = document.getElementById('msg')
       .then(response => {msg.innerHTML = "Message Sent Successfully"
         setTimeout(function(){
             msg.innerHTML=""
-        },3000)  
+        },5000)  
         form.reset()
         
     })
